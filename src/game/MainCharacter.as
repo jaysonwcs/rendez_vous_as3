@@ -128,6 +128,9 @@ package game
 			suitDamage = 0;
 			
 			this.gameCore = gameCore;
+			
+			FlxG.watch(acceleration, "x");
+			FlxG.watch(velocity, "x");
 		}
 		
 		override public function update():void {
